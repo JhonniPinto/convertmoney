@@ -1,0 +1,23 @@
+<% include partials/header.ejs %>
+
+<h1 class="mt-5">Dinheiro convertido</h1>
+<a href="/">Voltar</a>
+
+<form class="mt-5">
+  <div class="form-group">
+    <label for="outDollarQuotation">Cotação de dolar do cálculo:</label>
+    <input value="<%- cotacao %>" type="text" class="form-control" id="outDollarQuotation" aria-describedby="emailHelp" readonly>
+    <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+  </div>
+  <div class="form-group">
+    <label for="outDollarAmount">Quantidade de dólares do cálculo:</label>
+    <input value="<%- quantidade %>" type="text" class="form-control" id="outDollarAmount" readonly>
+  </div>
+  <div class="form-group">
+    <label for="outReais">Resultado em Reais (R$) da conversão:</label>
+    <input value="<%- total %>" type="text" class="form-control" id="outReais" readonly>
+  </div>
+  <button type="submit" class="btn btn-info">Submit</button>
+</form>
+
+<% include partials/footer.ejs %>

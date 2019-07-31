@@ -1,0 +1,28 @@
+{
+  "name": "convertmoney",
+  "version": "1.0.0",
+  "description": "converts your money",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "converts",
+    "money"
+  ],
+  "author": "Jhonni Pinto",
+  "license": "MIT",
+  "dependencies": {
+    "@hapi/joi": "^15.1.0",
+    "axios": "^0.19.0",
+    "ejs": "^2.6.2",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "jest": "^24.8.0"
+  },
+  "jest": {
+    "collectCoverage": true
+  }
+}
